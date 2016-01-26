@@ -1,0 +1,15 @@
+[user]
+	name = Georgios Koloventzos
+	email = g.koloventzos@gmail.com
+
+[alias]
+	lg = "log --graph\n--pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)\n%C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit --date=relative"
+	df = "diff --color"
+    pure = pull --rebase
+    co = 'commit'
+    ch = 'checkout'
+    st = 'status'
+[push]
+	default = matching
+[core]
+	excludesfile = /home/gkoloven/.gitignore_global
