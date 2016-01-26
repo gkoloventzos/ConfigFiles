@@ -12,6 +12,8 @@ install:
 ifeq ($(UNAME),Linux)
 	@echo $(PWD)
 	@ln -sf $(PWD)/git/.gitconfig ~/.gitconfig
+	@ln -sf $(PWD)/git/.gitignore_global ~/.gitignore_global
+	@ln -sf $(PWD)/git/.git_svn_bash_prompt ~/.git_svn_bash_prompt
 	@ln -sf $(PWD)/bash/.bashrc ~/.bashrc
 	@ln -sf $(PWD)/vim/.vimrc ~/.vimrc
 #	@ln -sf $(PWD)/tmux/.tmux.conf ~/.tmux.conf
