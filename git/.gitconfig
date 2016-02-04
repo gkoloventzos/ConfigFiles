@@ -9,6 +9,8 @@
     co = 'commit'
     ch = 'checkout'
     st = 'status'
+    last = reset --soft HEAD~
+    cd = checkout master
 [push]
 	default = matching
 [core]
