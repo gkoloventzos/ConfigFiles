@@ -32,6 +32,17 @@ function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
+function vim {
+    s=$1
+    file=${s%:*}
+    line=${s#*:}
+    if [ "$file" != "$line" ]
+    then
+        /usr/bin/vim $file +$line
+    else
+        /usr/bin/vim $file
+    fi
+}
 
 #TITLEBAR='\[\e]0;\u@\h\a\]'
 
