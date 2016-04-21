@@ -1,10 +1,10 @@
 [user]
-	name = Georgios Koloventzos
-	email = g.koloventzos@gmail.com
+    name = Georgios Koloventzos
+    email = g.koloventzos@gmail.com
 
 [alias]
-	lg = "log --graph\n--pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)\n%C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit --date=relative"
-	df = "diff --color"
+    lg = "log --graph\n--pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)\n%C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit --date=relative"
+    df = "diff --color"
     pure = pull --rebase
     co = 'commit'
     ch = 'checkout'
@@ -13,7 +13,8 @@
     cd = checkout master
 
 [push]
-	default = matching
+    default = matching
+    followTags = true
 
 [core]
-	excludesfile = /home/gkoloven/.gitignore_global
+    excludesfile = /home/gkoloven/.gitignore_global
