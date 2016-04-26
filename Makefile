@@ -16,7 +16,7 @@ ifeq ($(UNAME),Linux)
 	@ln -sf $(PWD)/git/.git_svn_bash_prompt ~/.git_svn_bash_prompt
 	@ln -sf $(PWD)/bash/.bashrc ~/.bashrc
 	@ln -sf $(PWD)/vim/.vimrc ~/.vimrc
-#	@ln -sf $(PWD)/tmux/.tmux.conf ~/.tmux.conf
+	@ln -sf $(PWD)/tmux/.tmux.conf ~/.tmux.conf
 	@echo  "You are good to go!"
 else
 	@echo "This doesn't seem like a Linux system :-("
