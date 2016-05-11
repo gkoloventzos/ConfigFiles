@@ -78,4 +78,4 @@ endif
 " http://www.linuxpowertop.org/known.php
 let &guicursor = &guicursor . ",a:blinkon0"
 
-
+autocmd FileType python set tabstop=2|set shiftwidth=2
