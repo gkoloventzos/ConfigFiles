@@ -5,12 +5,13 @@
 [alias]
     lg = "log --graph\n--pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)\n%C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit --date=relative"
     df = "diff --color"
-    pure = pull --rebase
+    pure = "pull --rebase"
     co = 'commit'
     ch = 'checkout'
     st = 'status'
-    last = reset --soft HEAD~
-    cd = checkout master
+    last = "reset --soft HEAD~"
+    cd = "checkout master"
+    stage = "diff --cached"
 
 [push]
     default = matching
