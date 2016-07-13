@@ -44,6 +44,10 @@ function vim {
     fi
 }
 
+function send {
+    kill -s USR1 $1
+}
+
 #TITLEBAR='\[\e]0;\u@\h\a\]'
 
 #PS1="${TITLEBAR}\[\e[31;1m\]\u@\[\e[33;1m\]\h:\[\e[34;1m\]\W\$(git branch 2>/dev/null | grep -e '\* ' | sed 's/^..\(.*\)/(\1)/')> \[\e[0m\]"
