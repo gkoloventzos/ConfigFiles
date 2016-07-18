@@ -17,6 +17,7 @@ ifeq ($(UNAME),Linux)
 	@ln -sf $(PWD)/bash/.bashrc ~/.bashrc
 	@ln -sf $(PWD)/vim/.vimrc ~/.vimrc
 	@ln -sf $(PWD)/tmux/.tmux.conf ~/.tmux.conf
+	@git config --global core.excludesfile ~/.gitignore_global
 	@echo  "You are good to go!"
 else
 	@echo "This doesn't seem like a Linux system :-("

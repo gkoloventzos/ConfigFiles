@@ -16,6 +16,3 @@
 [push]
     default = matching
     followTags = true
-
-[core]
-    excludesfile = /home/gkoloven/.gitignore_global
