@@ -77,6 +77,6 @@ endif
 " Don't wake up system with blinking cursor:
 " http://www.linuxpowertop.org/known.php
 let &guicursor = &guicursor . ",a:blinkon0"
-:highlight ColorColumn ctermbg=lightgrey guibg=lightgrey
+:highlight ColorColumn ctermbg=yellow guibg=lightgrey
 
 autocmd FileType python set tabstop=2|set shiftwidth=2
