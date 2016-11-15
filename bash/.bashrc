@@ -40,7 +40,8 @@ function vim {
     then
         /usr/bin/vim $file +$line
     else
-        /usr/bin/vim $file
+        shift
+        /usr/bin/vim $file $@
     fi
 }
 
