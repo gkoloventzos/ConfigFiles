@@ -11,7 +11,7 @@
     st = 'status'
     last = "reset --soft HEAD~"
     cd = "checkout master"
-    stage = "diff --cached"
+    staged = "diff --cached"
 
 [push]
     default = matching
