@@ -16,3 +16,5 @@
 [push]
     default = matching
     followTags = true
+[core]
+	pager = less -x1,5
