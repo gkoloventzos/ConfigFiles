@@ -28,3 +28,7 @@ endif
 
 update:
 	@git pull
+
+clean:
+	@rm ~/.gitconfig ~/.gitignore_global ~/.git_svn_bash_prompt ~/.bashrc
+	@rm -rf ~/.vim
