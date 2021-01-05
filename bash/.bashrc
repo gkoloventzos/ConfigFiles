@@ -73,6 +73,12 @@ alias psname='ps -F -ALL | grep'
 alias s='cd ..'
 alias ss='cd ../..' 
 alias d='cd -'
+#powerline-daemon -q
+POWERLINE_BASH_CONTINUATION=1
+POWERLINE_BASH_SELECT=1
+#. ~/.vim/bundle/powerline/powerline/bindings/bash/powerline.sh
 
+
+export PATH="$HOME/bin:$PATH"
 #must be last
 . ~/.git_svn_bash_prompt

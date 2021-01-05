@@ -1,6 +1,6 @@
 [user]
     name = Georgios Koloventzos
-    email = g.koloventzos@gmail.com
+    email = georgios.koloventzos@esperantotech.com
 
 [alias]
     lg = "log --graph\n--pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)\n%C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit --date=relative"
@@ -12,10 +12,13 @@
     last = "reset --soft HEAD~"
     cd = "checkout master"
     staged = "diff --cached"
+    subclone = "clone --recursive"
 
 [push]
-    default = matching
+	default = upstream
     followTags = true
 [core]
 	pager = less -x1,5
-	excludesfile = /home/gkoloven/.gitignore_global
+	excludesfile = /home/gkolov/.gitignore_global
+[http]
+	proxy = http://sc-squid-sw.esperanto.ai:3128
