@@ -32,6 +32,7 @@ Plugin 'mbbill/undotree'
 Plugin 'preservim/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-fugitive' 
 " Plugin 'Valloric/YouCompleteMe'
 " ...
 
