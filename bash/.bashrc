@@ -79,6 +79,6 @@ POWERLINE_BASH_SELECT=1
 #. ~/.vim/bundle/powerline/powerline/bindings/bash/powerline.sh
 
 
-export PATH="$HOME/bin:$PATH"
+export PATH=".:$HOME/bin:$PATH"
 #must be last
 . ~/.git_svn_bash_prompt
