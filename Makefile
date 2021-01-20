@@ -17,6 +17,7 @@ ifeq ($(UNAME),Linux)
 	@ln -sf $(PWD)/bash/.bashrc ~/.bashrc
 	@git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/plugin/Vundle.vim
 	@ln -sf $(PWD)/vim/.vimrc ~/.vimrc
+	@vim --cmd "source $(PWD)/vim/.vimrc"
 	@vim +PluginInstall +qall
 #	@ln -sf $(PWD)/tmux/.tmux.conf ~/.tmux.conf
 	@git config --global core.excludesfile ~/.gitignore_global
