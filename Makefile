@@ -6,6 +6,7 @@ all:
 	@echo "---------------------------------"
 	@echo "- Install: make install"
 	@echo "- Update: make update"
+	@echo "- Git configure: make git"
 
 install:
 	@make update
@@ -29,6 +30,17 @@ endif
 
 update:
 	@git pull
+
+git:
+ifeq ($(UNAME),Linux)
+	@echo $(PWD)
+	@ln -sf $(PWD)/git/.gitconfig ~/.gitconfig
+	@ln -sf $(PWD)/git/.gitignore_global ~/.gitignore_global
+	@git config --global core.excludesfile ~/.gitignore_global
+else
+	@echo "This doesn't seem like a Linux system :-("
+	@echo "I won't touch anything. Git changes failed"
+endif
 
 clean:
 	@rm ~/.gitconfig ~/.gitignore_global ~/.git_svn_bash_prompt ~/.bashrc
