@@ -15,8 +15,10 @@
     subclone = "clone --recursive"
 
 [push]
-	default = upstream
+    default = current
     followTags = true
+[pull]
+    rebase = false
 [core]
 	pager = less -x1,5
 	excludesfile = /home/gkolov/.gitignore_global
