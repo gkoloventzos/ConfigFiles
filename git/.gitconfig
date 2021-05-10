@@ -21,6 +21,6 @@
     rebase = false
 [core]
 	pager = less -x1,5
-	excludesfile = /home/gkolov/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [http]
 	proxy = http://sc-squid-sw.esperanto.ai:3128
