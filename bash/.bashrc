@@ -78,6 +78,9 @@ POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
 #. ~/.vim/bundle/powerline/powerline/bindings/bash/powerline.sh
 
+#Esperanto
+alias userdoc="docker ps| sed '1 d' | awk '{print \$1}' | xargs docker inspect | grep USERNAME | awk -F= '{print \$2}' | sed 's/.\{2\}$//'  | sort | uniq -c"
+alias userdoc_all="docker ps -a| sed '1 d' | awk '{print \$1}' | xargs docker inspect | grep USERNAME | awk -F= '{print \$2}' | sed 's/.\{2\}$//'  | sort | uniq -c"
 
 export PATH=".:$HOME/bin:$PATH"
 #must be last
