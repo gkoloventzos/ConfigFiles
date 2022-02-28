@@ -10,7 +10,7 @@ all:
 
 install:
 	@make update
-ifeq ($(UNAME),$(filter $(UNAME),Linux, Darwin))
+ifeq ($(UNAME),$(filter $(UNAME),Linux Darwin))
 	@echo $(PWD)
 	@ln -sf $(PWD)/git/.gitconfig ~/.gitconfig
 	@ln -sf $(PWD)/git/.gitignore_global ~/.gitignore_global
